@@ -1,0 +1,35 @@
+@use './variables' as *;
+
+html.dark {
+  // 背景色
+  --bg-color: #141414;
+  --bg-color-overlay: #1d1e1f;
+  
+  // 文字颜色
+  --text-color: #E5EAF3;
+  --text-color-regular: #CFD3DC;
+  --text-color-secondary: #A3A6AD;
+  
+  // 边框颜色
+  --border-color: #363637;
+  --border-color-light: #434343;
+  
+  // 自定义暗色主题样式
+  .layout-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+    .sidebar {
+      background-color: var(--bg-color-overlay);
+    }
+    
+    .main-container {
+      background-color: var(--bg-color);
+      
+      .navbar {
+        background-color: var(--bg-color-overlay);
+        border-color: var(--border-color);
+      }
+    }
+  }
+} 
